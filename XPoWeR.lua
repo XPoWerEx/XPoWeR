@@ -2624,7 +2624,7 @@ if data.Ch_Member.info ~= true then
 send(msg.chat_id_,msg.id_,'✫: شترك في قناة السورس اولآ @X_PoWeR_TeaM .')   
 return false 
 end
-Text = "ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ SouRce XPoWeR\n\n[-  XPoWeR ᴄʜᴀɴɴᴇʟ  .](http://t.me/X_PoWeR_TeaM)\n\n[-  ɪɴғᴏ sᴏᴜʀᴄᴇ .](http://t.me/X_PoWeR_TeaM)\n\n[-  XPoWeR ᴅᴇᴠᴇʟᴏᴘᴇʀ  .](http://t.me/Mooaiud)\n\n[-  ʙᴏᴛ XPoWeR .](http://t.me/rriebot)"
+Text = "ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ SouRce XPoWeR\n\n[-  XPoWeR ᴄʜᴀɴɴᴇʟ  .](http://t.me/X_PoWeR_TeaM)\n\n[-  ɪɴғᴏ sᴏᴜʀᴄᴇ .](http://t.me/X_PoWeR_TeaM)\n\n[-  XPoWeR ᴅᴇᴠᴇʟᴏᴘᴇʀ  .](http://t.me/Mooaiud)\n\n[-  ʙᴏᴛ XPoWeR .](http://t.me/u5kBoT)"
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = '✫: XPoWeR SouRce .',url="t.me/X_PoWeR_TeaM/567"}},
