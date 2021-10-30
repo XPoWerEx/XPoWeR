@@ -90,7 +90,7 @@ RunBot:write([[
 cd $HOME/XPoWeR
 token="]]..database:get(Server_Done.."Token_Write")..[["
 rm -fr XPoWeR.lua
-wget "https://raw.githubusercontent.com/XPoWeR-DeV/XPoWeR/main/XPoWeR.lua"
+wget "https://raw.githubusercontent.com/XPoWerEx/XPoWeR/main/XPoWeR.lua"
 while(true) do
 rm -fr ../.telegram-cli
 ./tg -s ./XPoWeR.lua -p PROFILE --bot=$token
