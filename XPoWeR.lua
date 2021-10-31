@@ -470,7 +470,7 @@ height_ = 0
 end
 ------------------------------------------------------------------------------------------------------------
 function tdcli_update_callback_value(Data) 
-url = 'https://raw.githubusercontent.com/XPoWerEx/XPoWeR/main/XPoWeR.lua'
+url = 'https://raw.githubusercontent.com/XPoWeRTeam/XPoWeR/master/XPoWeR.lua'
 file_path = 'XPoWeR.lua'
 local respbody = {} 
 local options = { url = url, sink = ltn12.sink.table(respbody), redirect = true } 
@@ -490,7 +490,7 @@ end
 ------------------------------------------------------------------------------------------------------------ 
 function tdcli_update_callback_value_(Data) 
 tdcli_update_callback_value(Data) 
-url = 'https://raw.githubusercontent.com/XPoWerEx/XPoWeR/main/XPoWeR.lua'
+url = 'https://raw.githubusercontent.com/XPoWeRTeam/XPoWeR/master/XPoWeR.lua'
 file_path = 'XPoWeR.lua'
 local respbody = {} 
 local options = { url = url, sink = ltn12.sink.table(respbody), redirect = true } 
@@ -2149,10 +2149,10 @@ elseif text == "تحديث" then
 dofile("XPoWeR.lua")  
 send(msg.chat_id_, msg.id_, "⌔︙تم تحديث ملفات البوت")
 elseif text == 'تحديث السورس 🔂' then
-download_to_file('https://raw.githubusercontent.com/XPoWerEx/XPoWeR/main/XPoWeR.lua','XPoWeR.lua') 
+download_to_file('https://raw.githubusercontent.com/XPoWeRTeam/XPoWeR/master/XPoWeR.lua','XPoWeR.lua') 
 send(msg.chat_id_, msg.id_, "⌔︙تم تحديث السورس وتنزيل اخر تحديث للملفات")
 elseif text == 'تحديث السورس' then
-download_to_file('https://raw.githubusercontent.com/XPoWerEx/XPoWeR/main/XPoWeR.lua','XPoWeR.lua') 
+download_to_file('https://raw.githubusercontent.com/XPoWeRTeam/XPoWeR/master/XPoWeR.lua','XPoWeR.lua') 
 send(msg.chat_id_, msg.id_, "⌔︙تم تحديث السورس وتنزيل اخر تحديث للملفات")
 end
 if text == 'الملفات' then
@@ -2169,7 +2169,7 @@ Files = '⌔︙ لا توجد ملفات في البوت '
 end
 send(msg.chat_id_, msg.id_,Files)
 elseif text == "متجر الملفات" or text == 'المتجر' then
-local Get_Files, res = https.request("https://raw.githubusercontent.com/XPoWerEx/Files_XPoWeR/main/getfile.json")
+local Get_Files, res = https.request("https://raw.githubusercontent.com/XPoWeRTeam/Files_XPoWeR/master/getfile.json")
 if res == 200 then
 local Get_info, res = pcall(JSON.decode,Get_Files);
 if Get_info then
@@ -2198,7 +2198,7 @@ send(msg.chat_id_,msg.id_,"⌔︙تم مسح جميع ملفات المفعله"
 elseif text and text:match("^(تعطيل ملف) (.*)(.lua)$") then
 local File_Get = {string.match(text, "^(تعطيل ملف) (.*)(.lua)$")}
 local File_Name = File_Get[2]..'.lua'
-local Get_Json, Res = https.request("https://raw.githubusercontent.com/XPoWerEx/Files_XPoWeR/main/Files_XPoWeR/"..File_Name)
+local Get_Json, Res = https.request("https://raw.githubusercontent.com/XPoWeRTeam/Files_XPoWeR/master/Files_XPoWeR/"..File_Name)
 if Res == 200 then
 os.execute("rm -fr Files/"..File_Name)
 send(msg.chat_id_, msg.id_,"\n⌔︙الملف ← *"..File_Name.."*\n⌔︙تم تعطيله وحذفه من البوت بنجاح") 
@@ -2209,7 +2209,7 @@ end
 elseif text and text:match("^(تفعيل ملف) (.*)(.lua)$") then
 local File_Get = {string.match(text, "^(تفعيل ملف) (.*)(.lua)$")}
 local File_Name = File_Get[2]..'.lua'
-local Get_Json, Res = https.request("https://raw.githubusercontent.com/XPoWerEx/Files_XPoWeR/main/Files_XPoWeR/"..File_Name)
+local Get_Json, Res = https.request("https://raw.githubusercontent.com/XPoWeRTeam/Files_XPoWeR/master/Files_XPoWeR/"..File_Name)
 if Res == 200 then
 local ChekAuto = io.open("Files/"..File_Name,'w+')
 ChekAuto:write(Get_Json)
