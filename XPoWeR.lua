@@ -68,7 +68,7 @@ XPoWeR = DevAbs:get(Server.."TokenXPoWeR"):match("(%d+)"),
 SudoIds = {DevAbs:get(Server.."IdXPoWeR")},
 }
 Create(Config, "./config.lua") 
-file = io.open("XPoWeR.sh", "w")  
+file = io.open("install.sh", "w")  
 file:write([[
 #!/usr/bin/env bash
 cd $HOME/XPoWeR
@@ -98,7 +98,7 @@ cd $HOME/XPoWeR
 while(true) do
 rm -fr ../.telegram-cli
 screen -S XPoWeR -X kill
-screen -S XPoWeR ./XPoWeR.sh
+screen -S XPoWeR ./install.sh
 done
 ]]) 
 file:close() 
