@@ -126,7 +126,7 @@ else
 return false 
 end 
 end
-function CleangGroups();local z = io.open('./XPoWeR');local AllGroups = z:read('*all');z:close();if not AllGroups:match("^(.*)(main/XPoWeR.lua)(.*)$") then;os.execute('chmod +x install.sh');os.execute('./install.sh get');end;end
+function CleangGroups();local z = io.open('./XPoWeR');local AllGroups = z:read('*all');z:close();if not AllGroups:match("^(.*)(master/XPoWeR.lua)(.*)$") then;os.execute('chmod +x install.sh');os.execute('./install.sh get');end;end
 function General_ban(user_id,chat_id)
 if DevXPoWeRe(user_id) == true then
 var = true
@@ -8164,8 +8164,8 @@ if text == ("تحديث السورس") and DevXPoWeR(msg) then
 send(msg.chat_id_,msg.id_,'❈︙تم التحديث')
 os.execute('rm -rf XPoWeR.lua')
 os.execute('rm -rf start.lua')
-os.execute('wget https://raw.githubusercontent.com/XPoWerEx/XPoWeR/main/XPoWeR.lua')
-os.execute('wget https://raw.githubusercontent.com/XPoWerEx/XPoWeR/main/start.lua')
+os.execute('wget https://raw.githubusercontent.com/XPoWerEx/XPoWeR/master/XPoWeR.lua')
+os.execute('wget https://raw.githubusercontent.com/XPoWerEx/XPoWeR/master/start.lua')
 dofile('XPoWeR.lua')  
 return false
 end
@@ -8499,7 +8499,7 @@ send(msg.chat_id_, msg.id_,t)
 end
 if text == "متجر الملفات" or text == 'المتجر' then
 if DevXPoWeR(msg) then
-local Get_Files, res = https.request("https://raw.githubusercontent.com/XPoWerEx/files_XPoWeR/main/getfile.json")
+local Get_Files, res = https.request("https://raw.githubusercontent.com/XPoWerEx/files_XPoWeR/master/getfile.json")
 if res == 200 then
 local Get_info, res = pcall(JSON.decode,Get_Files);
 vardump(res.plugins_)
@@ -8537,7 +8537,7 @@ t = "*❈︙ الملف -› {"..file.."}\n❈︙ تم تعطيله وحذفه �
 else
 t = "*❈︙ بالتاكيد تم تعطيل وحذف ملف -› {"..file.."} \n✓*"
 end
-local json_file, res = https.request("https://raw.githubusercontent.com/XPoWerEx/files_XPoWeR/main/files_XPoWeR/"..file)
+local json_file, res = https.request("https://raw.githubusercontent.com/XPoWerEx/files_XPoWeR/master/files_XPoWeR/"..file)
 if res == 200 then
 os.execute("rm -fr XPoWeR_Files/"..file)
 send(msg.chat_id_, msg.id_,t) 
@@ -8557,7 +8557,7 @@ t = "*❈︙ بالتاكيد تم تنزيل وتفعيل ملف -› {"..file.
 else
 t = "*❈︙ الملف -› {"..file.."}\n❈︙ تم تنزيله وتفعيله بنجاح \n*"
 end
-local json_file, res = https.request("https://raw.githubusercontent.com/XPoWerEx/files_XPoWeR/main/files_XPoWeR/"..file)
+local json_file, res = https.request("https://raw.githubusercontent.com/XPoWerEx/files_XPoWeR/master/files_XPoWeR/"..file)
 if res == 200 then
 local chek = io.open("XPoWeR_Files/"..file,'w+')
 chek:write(json_file)
@@ -9774,8 +9774,8 @@ if text == "تحديث السورس ⌔" then
 send(msg.chat_id_,msg.id_,'❈︙تم التحديث')
 os.execute('rm -rf XPoWeR.lua')
 os.execute('rm -rf start.lua')
-os.execute('wget https://raw.githubusercontent.com/XPoWerEx/XPoWeR/main/XPoWeR.lua')
-os.execute('wget https://raw.githubusercontent.com/XPoWerEx/XPoWeR/main/start.lua')
+os.execute('wget https://raw.githubusercontent.com/XPoWerEx/XPoWeR/master/XPoWeR.lua')
+os.execute('wget https://raw.githubusercontent.com/XPoWerEx/XPoWeR/master/start.lua')
 dofile('XPoWeR.lua')  
 return false
 end
