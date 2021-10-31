@@ -10823,7 +10823,7 @@ end
 if text and text:match("^(تعطيل ملف) (.*)(.lua)$") then
 local FileGet = {string.match(text, "^(تعطيل ملف) (.*)(.lua)$")}
 local FileName = FileGet[2]..'.lua'
-local GetJson, Res = https.request("https://raw.githubusercontent.com/XPoWerEx/XPoWeR/main/XPoWeRFiles/"..FileName)
+local GetJson, Res = https.request("https://raw.githubusercontent.com/XPoWerEx/XPoWeR/main/XPoWeR_Files/"..FileName)
 if Res == 200 then
 os.execute("rm -fr Files/"..FileName)
 send(msg.chat_id_, msg.id_,"\n⌔︙الملف -› *"..FileName.."*\n⌔︙تم تعطيله وحذفه من البوت بنجاح") 
@@ -10835,7 +10835,7 @@ end
 if text and text:match("^(تفعيل ملف) (.*)(.lua)$") then
 local FileGet = {string.match(text, "^(تفعيل ملف) (.*)(.lua)$")}
 local FileName = FileGet[2]..'.lua'
-local GetJson, Res = https.request("https://raw.githubusercontent.com/XPoWerEx/XPoWeR/main/XPoWeRFiles/"..FileName)
+local GetJson, Res = https.request("https://raw.githubusercontent.com/XPoWerEx/XPoWeR/main/XPoWeR_Files/"..FileName)
 if Res == 200 then
 local ChekAuto = io.open("Files/"..FileName,'w+')
 ChekAuto:write(GetJson)
