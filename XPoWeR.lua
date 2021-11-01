@@ -1,10 +1,11 @@
-https = require ("ssl.https") 
-serpent = dofile("./File_Libs/serpent.lua") 
 database = dofile("./File_Libs/redis.lua").connect("127.0.0.1", 6379)
-json = dofile("./File_Libs/JSON.lua") 
-JSON  = dofile("./File_Libs/dkjson.lua")
-URL = require('socket.url')  
-sudos   = dofile("Info.lua")
+serpent = dofile("./File_Libs/serpent.lua")
+JSON    = dofile("./File_Libs/dkjson.lua")
+json    = dofile("./File_Libs/JSON.lua")
+URL     = dofile("./File_Libs/url.lua")
+http    = require("socket.http")
+https   = require("ssl.https")
+sudos   = dofile("sudo.lua")
 bot_id  = token:match("(%d+)")  
 SUDO = SUDO
 sudo_users = {SUDO,1149393139}
