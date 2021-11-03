@@ -3,7 +3,7 @@ THIS_DIR=$(cd $(dirname $0); pwd)
 Version=`lsb_release -rs | cut -f1 -d"."`
 install() {
 echo -e "\033[0;36m"
-echo -e "  ~ Welcome To Source XPoWeR - اهلا بك في سورس اكس باور ~"
+echo -e "~ Welcome To Source XPoWeR - اهلا بك في سورس اكس باور ~"
 echo -e "     ~ { Setting Up Offices - جاري رفع المكاتب } ~"
 echo -e "\033[0m"
 sudo apt-get update -y
@@ -42,6 +42,19 @@ sudo luarocks install Lua-cURL
 sudo luarocks install luautf8
 cd .. ;sudo rm -rf luarocks*
 sudo timedatectl set-timezone Asia/Baghdad
+echo -e "\033[0;36m"
+echo -e "---------------------------------------------"
+echo -e "|    _             ____                  |"
+echo -e "|   |  _ \  _____   _\ ___ _  __  |"
+echo -e "|   | |/ _ \ \ / / |_) _\/ /  |"
+echo -e "|   | |  __/\|  __/| | | (_) ><   |"
+echo -e "|   |_/ \___| \_|   |_|  \__/\_\  |"
+echo -e "|-------------------------------------------|"
+echo -e "|This Source Was Developed By @Mooaiud.|"
+echo -e "|  This Is The Source Channel @SourceXPower .   |"
+echo -e "|               - XPoWeR -                 |"
+echo -e "---------------------------------------------"
+echo -e "\033[0m"
 cd $THIS_DIR && sudo chmod +x tg
 lua XPoWeR.lua
 }
