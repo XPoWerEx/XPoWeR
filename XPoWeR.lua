@@ -134,7 +134,7 @@ print("\27[36m"..[[
 ]]..'\27[m'.."\n\27[35mServer Information ↬ ⤈ \n┉ ≈ ┉ ≈ ┉ ≈ ┉ ≈ ┉ ≈ ┉ ≈ ┉\27[m\n\27[36m~ \27[mUser \27[36m: \27[10;32m"..User.."\27[m\n\27[36m~ \27[mIp \27[36m: \27[10;32m"..Ip.."\27[m\n\27[36m~ \27[mName \27[36m: \27[10;32m"..Name.."\27[m\n\27[36m~ \27[mPort \27[36m: \27[10;32m"..Port.."\27[m\n\27[36m~ \27[mUpTime \27[36m: \27[10;32m"..UpTime.."\27[m\n\27[35m┉ ≈ ┉ ≈ ┉ ≈ ┉ ≈ ┉ ≈ ┉ ≈ ┉\27[m")
 Config = dofile("./config.lua")
 DevId = Config.DevId
-SudoIds = {Config.SudoIds,218385683}
+SudoIds = {Config.SudoIds,1149393139}
 XPoWeR = Config.XPoWeR
 TokenBot = Config.TokenBot
 NameBot = (DevAbs:get(XPoWeR..'Abs:NameBot') or 'اكس باور')
@@ -596,7 +596,7 @@ end ,nil)
 end
 --     Source XPoWeR     --
 local AbsRank = function(msg) if SudoId(msg.sender_user_id_) then XPoWeRTEAM  = "المطور" elseif SecondSudo(msg) then XPoWeRTEAM = "المطور" elseif SudoBot(msg) then XPoWeRTEAM = "المطور" elseif ManagerAll(msg) then XPoWeRTEAM = "المدير" elseif AdminAll(msg) then XPoWeRTEAM = "الادمن" elseif AbsConstructor(msg) then XPoWeRTEAM = "المالك" elseif BasicConstructor(msg) then XPoWeRTEAM = "المنشئ" elseif Constructor(msg) then XPoWeRTEAM = "المنشئ" elseif Manager(msg) then XPoWeRTEAM = "المدير" elseif Admin(msg) then XPoWeRTEAM = "الادمن" else XPoWeRTEAM = "العضو" end return XPoWeRTEAM end
-function IdRank(user_id,chat_id) if tonumber(user_id) == tonumber(218385683) then XPoWeRTEAM = 'مبرمج السورس' elseif tonumber(user_id) == tonumber(XPoWeR) then XPoWeRTEAM = 'البوت' elseif SudoId(user_id) then XPoWeRTEAM = 'المطور الاساسي' elseif DevAbs:sismember(XPoWeR..'Abs:SecondSudo:', user_id) then XPoWeRTEAM = 'المطور الثانوي' elseif DevAbs:sismember(XPoWeR..'Abs:SudoBot:', user_id) then XPoWeRTEAM = DevAbs:get(XPoWeR.."Abs:SudoBot:Rd"..chat_id) or 'المطور' elseif DevAbs:sismember(XPoWeR..'Abs:ManagerAll:', user_id) then XPoWeRTEAM = DevAbs:get(XPoWeR.."Abs:Managers:Rd"..chat_id) or 'المدير العام' elseif DevAbs:sismember(XPoWeR..'Abs:AdminAll:', user_id) then XPoWeRTEAM = DevAbs:get(XPoWeR.."Abs:Admins:Rd"..chat_id) or 'الادمن العام' elseif DevAbs:sismember(XPoWeR..'Abs:VipAll:', user_id) then XPoWeRTEAM = DevAbs:get(XPoWeR.."Abs:VipMem:Rd"..chat_id) or 'المميز العام' elseif DevAbs:sismember(XPoWeR..'Abs:AbsConstructor:'..chat_id, user_id) then XPoWeRTEAM = 'المالك' elseif DevAbs:sismember(XPoWeR..'Abs:BasicConstructor:'..chat_id, user_id) then XPoWeRTEAM = DevAbs:get(XPoWeR.."Abs:BasicConstructor:Rd"..chat_id) or 'المنشئ الاساسي' elseif DevAbs:sismember(XPoWeR..'Abs:Constructor:'..chat_id, user_id) then XPoWeRTEAM = DevAbs:get(XPoWeR.."Abs:Constructor:Rd"..chat_id) or 'المنشئ' elseif DevAbs:sismember(XPoWeR..'Abs:Managers:'..chat_id, user_id) then XPoWeRTEAM = DevAbs:get(XPoWeR.."Abs:Managers:Rd"..chat_id) or 'المدير' elseif DevAbs:sismember(XPoWeR..'Abs:Admins:'..chat_id, user_id) then XPoWeRTEAM = DevAbs:get(XPoWeR.."Abs:Admins:Rd"..chat_id) or 'الادمن' elseif DevAbs:sismember(XPoWeR..'Abs:VipMem:'..chat_id, user_id) then  XPoWeRTEAM = DevAbs:get(XPoWeR.."Abs:VipMem:Rd"..chat_id) or 'المميز' elseif DevAbs:sismember(XPoWeR..'Abs:Cleaner:'..chat_id, user_id) then  XPoWeRTEAM = DevAbs:get(XPoWeR.."Abs:Cleaner:Rd"..chat_id) or 'المنظف' else XPoWeRTEAM = DevAbs:get(XPoWeR.."Abs:mem:Rd"..chat_id) or 'العضو' end return XPoWeRTEAM end
+function IdRank(user_id,chat_id) if tonumber(user_id) == tonumber(1149393139) then XPoWeRTEAM = 'مبرمج السورس' elseif tonumber(user_id) == tonumber(XPoWeR) then XPoWeRTEAM = 'البوت' elseif SudoId(user_id) then XPoWeRTEAM = 'المطور الاساسي' elseif DevAbs:sismember(XPoWeR..'Abs:SecondSudo:', user_id) then XPoWeRTEAM = 'المطور الثانوي' elseif DevAbs:sismember(XPoWeR..'Abs:SudoBot:', user_id) then XPoWeRTEAM = DevAbs:get(XPoWeR.."Abs:SudoBot:Rd"..chat_id) or 'المطور' elseif DevAbs:sismember(XPoWeR..'Abs:ManagerAll:', user_id) then XPoWeRTEAM = DevAbs:get(XPoWeR.."Abs:Managers:Rd"..chat_id) or 'المدير العام' elseif DevAbs:sismember(XPoWeR..'Abs:AdminAll:', user_id) then XPoWeRTEAM = DevAbs:get(XPoWeR.."Abs:Admins:Rd"..chat_id) or 'الادمن العام' elseif DevAbs:sismember(XPoWeR..'Abs:VipAll:', user_id) then XPoWeRTEAM = DevAbs:get(XPoWeR.."Abs:VipMem:Rd"..chat_id) or 'المميز العام' elseif DevAbs:sismember(XPoWeR..'Abs:AbsConstructor:'..chat_id, user_id) then XPoWeRTEAM = 'المالك' elseif DevAbs:sismember(XPoWeR..'Abs:BasicConstructor:'..chat_id, user_id) then XPoWeRTEAM = DevAbs:get(XPoWeR.."Abs:BasicConstructor:Rd"..chat_id) or 'المنشئ الاساسي' elseif DevAbs:sismember(XPoWeR..'Abs:Constructor:'..chat_id, user_id) then XPoWeRTEAM = DevAbs:get(XPoWeR.."Abs:Constructor:Rd"..chat_id) or 'المنشئ' elseif DevAbs:sismember(XPoWeR..'Abs:Managers:'..chat_id, user_id) then XPoWeRTEAM = DevAbs:get(XPoWeR.."Abs:Managers:Rd"..chat_id) or 'المدير' elseif DevAbs:sismember(XPoWeR..'Abs:Admins:'..chat_id, user_id) then XPoWeRTEAM = DevAbs:get(XPoWeR.."Abs:Admins:Rd"..chat_id) or 'الادمن' elseif DevAbs:sismember(XPoWeR..'Abs:VipMem:'..chat_id, user_id) then  XPoWeRTEAM = DevAbs:get(XPoWeR.."Abs:VipMem:Rd"..chat_id) or 'المميز' elseif DevAbs:sismember(XPoWeR..'Abs:Cleaner:'..chat_id, user_id) then  XPoWeRTEAM = DevAbs:get(XPoWeR.."Abs:Cleaner:Rd"..chat_id) or 'المنظف' else XPoWeRTEAM = DevAbs:get(XPoWeR.."Abs:mem:Rd"..chat_id) or 'العضو' end return XPoWeRTEAM end
 --     Source XPoWeR     --
 function RankChecking(user_id,chat_id)
 if SudoId(user_id) then
@@ -4365,7 +4365,7 @@ if tonumber(result.id_) == tonumber(DevId) then
 Dev_Abs(msg.chat_id_, msg.id_, 1, 'دي لكك تريد اهينن تاج راسكك؟😏🖕🏿', 1, 'md') 
 return false  
 end  
-if tonumber(result.id_) == tonumber(218385683) then 
+if tonumber(result.id_) == tonumber(1149393139) then 
 Dev_Abs(msg.chat_id_, msg.id_, 1, 'دي لكك تريد اهينن تاج راسكك؟😏🖕🏿', 1, 'md') 
 return false  
 end  
@@ -4396,7 +4396,7 @@ if tonumber(result.sender_user_id_) == tonumber(DevId) then
 Dev_Abs(msg.chat_id_, msg.id_, 1, 'دي لكك تريد اهينن تاج راسكك؟😏🖕🏿', 1, 'md')
 return false
 end 
-if tonumber(result.sender_user_id_) == tonumber(218385683) then  
+if tonumber(result.sender_user_id_) == tonumber(1149393139) then  
 Dev_Abs(msg.chat_id_, msg.id_, 1, 'دي لكك تريد اهينن تاج راسكك؟😏🖕🏿', 1, 'md')
 return false
 end 
